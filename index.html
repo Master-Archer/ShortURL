@@ -208,22 +208,15 @@
       <p x-show.transition.opacity="alert" :class="alert?.type" x-text="alert?.message"></p>
       <input placeholder="输入要缩短的网址..." x-model="url" x-ref="url" />
       <details>
-        <summary>自定义设置</summary>
+        <summary>自定义短链接</summary>
         <div>
-          <input placeholder="slug" x-model="slug" />
-          <small>不设置则随机生成 slug</small>
+          <input placeholder="" x-model="slug" />
         </div>
       </details>
       <button :class="{ loading }" :disabled="loading || isValidated()" @click="submit($refs, $nextTick)">生成</button>
     </main>
     <footer>
       基于Cloudflare的短链生成器<img src="https://cdn.jsdelivr.net/gh/HappyLeslieAlexander/PicGo01/Cloudflare.webp" width="80px" height="45px" alt="CloudFlare"> <br />
-
-      <a href="https://t.me/Depressed_LeslieAlexander" target="_blank">Leslie Alexander</a> <br />
-      
-      <a href="https://t.me/LeslieDiary" target="_blank">Telegram Channel</a> <br />
-
-      <a href="https://t.me/LeslieGroup" target="_blank">Telegram Group</a> <br />
 
     </footer>
     <script src="asset/js/alpine.js"></script>
